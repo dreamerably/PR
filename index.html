@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <link href="../../favicon.ico" rel="icon">
+
+    <title>ClearCareer</title><!-- Bootstrap core CSS -->
+    <link crossorigin="anonymous" href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity=
+    "sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    rel="stylesheet"><!-- FontAwesome Icon Font -->
+    <link href=
+    "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    rel="stylesheet"><!-- LinearIcons Icon Font -->
+    <link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel=
+    "stylesheet"><!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet"><!-- Timeline CSS -->
+    <link href="css/timeline.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- INTRO SECTION -->
+
+
+    <section class="section-image">
+        <div class="img-overlay"></div>
+
+            <div class="intro">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h5>personal resume</h5>
+						<h5>Hello</h5>
+
+
+                        <h1>I'm Wan zihan</h1>
+
+
+                       
+                    </div>
+                    <!-- /col-md-12 -->
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                    
+                    </div><!-- /col-md-8 -->
+                </div><!-- /row -->
+                
+
+
+                <div class="bottom">
+                    <a href="#about">
+                    <div class="mouse-icon">
+                        <div class="scroll">
+                        </div>
+                    </div></a>
+                </div>
+            </div><!-- /intro -->
+    </section>
+    
+    
+    <!-- ABOUT SECTION -->
+    <section class="section-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <img class="profilepic" src=
+                    "images/mine.jpg">
+
+                    <h2>基本信息</h2>
+
+                    <hr>
+					<h5>姓名：万子寒</h5>
+					<h5>学校：华侨大学</h5>
+					<h5>专业：计算机科学与技术（人工智能方向）</h5>
+					<h5>绩点：4.4/5</h5>
+					<h5>专业排名：1/40</h5>
+					<h5>英语水平：CET-4 500 CET-6 460 IELTS 6.0</h5>
+					<h5>研究兴趣：Computer vision、Machine Learning</h5>
+					<hr>
+					
+					<h2>教育经历</h2>
+					<hr>
+					<h5>2019.09-2023.06 华侨大学 本科</h5>
+					<h5>2022.01-2022.02 新加坡国立大学 交流学生</h5>
+					<hr>
+					
+					<h2>校园经历</h2>
+					<hr>
+					<h5>2019-2020 华侨大学计算机学院心理保健部部员</h5>
+					<h5>2020-2021 华侨大学计算机学院科技部副部长</h5>
+					<h5>2021-2022 华侨大学学生算法社团成员</h5>
+					<hr>
+					
+					<h2>奖项&荣誉</h2>
+					<hr>
+					<h5>2019-2020年度国家奖学金&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2020-2021年度国家奖学金</h5>
+					<h5>2020-2021年度华侨大学优秀学生&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2020-2021年度华侨大学优秀团员</h5>
+					<h5>Mathorcup高校数学建模挑战赛 全国一等奖&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国大学生数学建模大赛 福建省二等奖</h5>
+					<h5>MCM/ICM Honorable Mention&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国大学生计算机设计大赛 福建省一等奖（上推国赛）</h5>
+					<h5>GPLT团体程序设计天梯赛 福建省三等奖&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;华侨大学数学建模大赛 华侨大学一等奖</h5>
+					
+					<hr>
+					<h2>项目经历</h2>
+					<hr>
+					<div class="article-preview">
+					             
+					                <div class="text-section">
+					                    <h4>基于TensorFlow Lite的行驶状态检测系统</h4>
+					                    <p>
+					                        本项目基于TF Lite，在移动端对摄像头输入的图像进行实时的检测，识别驾驶者的驾驶动作，并对违规动作进行警示及记录。采用经典的AlexNet模型作为backbone，并对AlexNet特征提取的结果采用基于通道的注意力机制，得到了较高的accuracy
+					                    </p>
+										<p>
+											我们模型中采用SEAttention，如下所示：
+										</p>
+					                
+									<div class="img-section"> 
+									                    <img src="images/p1.png">
+									                </div>
+									<p>我们选用了针对通道的Attention，由于是针对通道的注意力机制，因此我们需要将特征提取出来，再对特征进行注意力机制，输入网络的数据形状是[32*3*256*256]，因此我们首先将数据传入AlexNet将特征提取，输出的形状是[32*256*7*7]，之后对数据进行全局平均适应池化，将数据变为[32*256]，最后传入全连接层进行分类，最终我们的模型acc达到了98%！
+									</p>
+					            </div>
+								<hr>
+								<div class="text-section">
+								        <h4>基于深度学习的医学影像分割与诊断系统</h4>
+								        
+											<p>本项目主要分为三大模块，一个医疗影像分割模型、一个医疗影像诊断模型、一个集成两大模块的诊断系统。</p>
+											
+												<p>医疗影像分割模型：采用Unet对输入的图像进行分割</p>
+												<p>医疗影像诊断模型：采用多视角融合技术对患者的MRI图像进行分类</p>
+												<p>诊断系统：基于PyQt开发的平台</p>
+
+								        
+										<p>
+											项目中，我主要负责的模块是医疗影像诊断模型的设计，因此只介绍本模块。
+												我们从冠状面、矢状面和横断面三个不同的视角提取提取三维医学体积图像的多视角图像，通过多视角分离提取三维体积图像不同角度的特异信息。然后将三个视角的图像输入三个不同的卷积神经网络，通过卷积操作提取不同视角的图像特征得到三组特征图。将三组特征图进行信息融合输入全连接神经网络对特征进行预测，最后得到 MRI 膝盖骨体积图像的损伤预测结果
+
+										</p>
+										<p>多视角融合网络结构图如下：</p>
+										<div class="img-section">
+																			                    <img src="images/p2.png">
+																			                </div>
+																			<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+																			<p>
+													
+										在此基础上，我们又引入了注意力机制，我们的注意力机制主要针对的目标是MRI图像的切片，由于MRI图像具有较多的切片，但并非所有的切片都具有有效的信息，因此我们的注意力机制的目标就是从诸多切片中，得到信息量最大的切片，对其进行重点的关注，从而提高我们的预测准确率，模型设计如下：
+																			</p>
+										<div class="img-section">
+																			                    <img src="images/p3.png">
+																			                </div>
+																			<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+										
+								    </div>
+									<hr>
+									<div class="text-section">
+									        <h4>基于拥塞避免的公共交通智慧出行平台</h4>
+									        <p>
+本项目包含三个主要模块：基于图注意力网络和天气权重控制的城市车流短时车速预测模型、城市公共交通出行线路生成机制以及基于分布式思想和数据可视化技术的公共交通智慧出行平台。目的是在高峰期为乘客提供最佳的、避免拥塞的乘车路线。
+									        </p>
+											<p>
+												本人主要参与前两个模块的开发，即车速预测模型和城市公共交通出行线路生成机制。
+											</p>
+											<p>基于图注意力网络和天气权重控制的城市车流短时车速预测模型：
+	定义路段为城市交通网络中以道路交叉口或公交站点作为划分道路线段的一个抽象点，每一个抽象点具有相应的属性，如速度、天气情况等。
+	模型的目标就是采用图注意力网络对路段车速进行预测。我们将天气因素作为权重去对我们的车速进行处理，得到天气影响下的车流速度，并以此为速度为输入，实现有天气因素的情况下的车速预测。
+	</p>
+	<p>模型的网络结构如下：</p>
+									    
+										<div class="img-section"> 
+										                    <img src="images/p4.png">
+										                </div>
+														
+										<p>城市公共交通出行线路生成机制：
+本机制采用拥塞避免的思想，为乘客出行提高有效的出行线路方案，首先采用拥堵系数计算公式对线路的拥堵情况进行评估，之后对线路进行搜索，基于yen算法搜索K条有效路线，再以我们设计的评价指标为依据对线路进行筛选。
+
+										</p>
+									</div>
+									
+									
+									
+			<hr>
+												<div class="text-section">
+														<h4>大学生创新创业训练计划</h4>
+														
+														
+				<p>项目名：基于深度学习的膝关节损伤诊断系统</p>
+				<p>本项目是《基于深度学习的医学影像分割与诊断系统》中的一个子模块单独拿出来申报的大创。主要工作核心在于优化模型，以取得最佳的预测正确率。</p>
+				<p>计划从导师合作的医院获取更加充足的数据集（商讨中）。
+	对MRI图像进行一定规模的数据增强，如对数变换等数字图像处理技术，使得图像更加清晰，同时对数据集进行扩充。
+	学习最新的技术解决样本不均衡问题如：引入balanced-softmax或focal loss.
+	加入新的评价指标，对模型进行更好的评估如：f1指标。
+	对诊断结果进行三维展示，优化平台的功能。
+</p>			
+					<p>项目框架如下所示：</p>
+													<div class="img-section"> 
+																		<img src="images/p5.png">
+																	</div>
+																	
+												</div>
+												
+			<hr>
+			<div class="text-section">
+			        <h4>本科生导师的科研项目</h4>
+			        <p>
+对洋流的遥感图像进行处理获得洋流的流速。
+			        </p>
+					<p>
+						在此项目中，本人主要负责：
+						1.搜集洋流的数据集。
+						2.采用一些滤波技术对老师预测出来的流速进行去噪。
+						3.采用一些其他技术预测洋流速度，如光流法。
+					</p>
+			</div>
+			
+			<hr>
+						<div class="text-section">
+						        <h4>AI算法工程师实习</h4>
+						        
+								<p>1.采用c++实现经典的密度聚类算法</p>
+								<p>2.基于OPTICS引入稳定性（保持多次聚类的类别标签一致），增量性（允许在聚类后加入新的特征点进行聚类），自适应阈值（对optics中的eps参数进行自动选取）</p>
+								<p>3.研究前沿算法如：HDBSCAN、FISHDBC</p>
+								
+						</div>								
+		
+		</div>   
+                </div><!-- /col-md-6 -->
+            </div><!-- / row -->
+        </div><!-- /container -->
+    </section>
+    <!-- SKILLS SECTION -->
+
+
+    
+ 
+
+
+   
+    <!-- FOOTER SECTION -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>Design by: 万子寒<br>
+                    </p>
+                </div>
+
+
+                <div class="col-md-4 text-center">
+                    <p>Email：wwwwwzh@163.com<br>
+					QQ:602710490<br>
+					wechat:wwwwwzh10<br>
+					Tel:18950182837
+					</p>
+                </div>
+
+
+                <!-- /col-md-4 -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+    </footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+    </script> 
+    <script>
+    window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+    </script> 
+    <script src="js/bootstrap.min.js">
+    </script> 
+    <script src="js/scripts.js">
+    </script>
+</body>
+</html>
